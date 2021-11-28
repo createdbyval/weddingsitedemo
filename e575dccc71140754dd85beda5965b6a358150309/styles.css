@@ -88,7 +88,7 @@ p {
     }
     h5 {
         padding: 0 20px;
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
     p {
         padding: 0 20px;
@@ -532,11 +532,19 @@ a.m-current-link{
 }
 @media (max-width: 767px) {
     .photo-highlights {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0;
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+    .featured-img {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 10px;
+    }
+    .featured-img:nth-child(odd){
+        margin-top: 30px;
+    }
+    .featured-img:nth-child(even){
+        margin-top: -30px;
     }
 }
 .count-down {
@@ -589,7 +597,12 @@ textarea, input {
     padding: 5px;
     font-family: 'Josefin Slab', serif;
 }
-
+@media (max-width: 767px) {
+    .contact-wrap {
+        padding: 40px 20px;
+        text-align: center;
+}
+}
 
 
 /* WEDDING DETAILS PAGE */
@@ -849,10 +862,9 @@ input[type="radio"] {
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-    .alt-hero {
-        width: 90%;
-        height:400px;
-        
+    .flex-containers {
+        padding: 0 50px;
+
     }
 }
 
@@ -1018,8 +1030,13 @@ div.polaroid {
     }
     .faq-page {
         padding: 0 20px;
-    }
-       
+    }      
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .faq-page {
+        padding: 0 50px;
+    } 
+
   }
 
   /* ACCOMMODATIONS */
